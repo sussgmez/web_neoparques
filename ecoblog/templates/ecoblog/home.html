@@ -1,0 +1,57 @@
+{% extends "core/base.html" %}
+
+{% load static %}
+
+{% block title %}Inicio{% endblock title %}
+
+{% block content %}
+<div class="list-page">
+    <div class="main-image">
+        <img src="{% static 'images/welcome.png' %}" alt="">
+    </div>
+    <div id="id_list">
+        <h2>PARQUES NACIONALES</h2>
+        {% for national_park in national_parks %}
+            <a class="protected-area" href="">
+                <div class="pa-image">
+                    <img src="{{ national_park.image.url }}" alt="">
+                </div>
+                <div class="pa-content">
+                    <p class="pa-name">{{ national_park.name }}</p>
+                    <div class="pa-description">
+                        {{ national_park.description|safe }}
+                    </div>
+                    <p class="pa-address">{{ national_park.address }}</p>
+                    <p class="pa-date">Establecido el {{ national_park.established_date }}</p>
+                </div>
+            </a>
+        {% endfor %}
+
+            
+        <h2>MONUMENTOS NATURALES</h2>
+
+        {% for natural_monument in natural_monuments %}
+            <a class="protected-area" href="">
+                <div class="pa-image">
+                    <img src="{{ natural_monument.image.url }}" alt="">
+                </div>
+                <div class="pa-content">
+                    <p class="pa-name">{{ natural_monument.name }}</p>
+                    <div class="pa-description">
+                        {{ natural_monument.description|safe }}
+                    </div>
+                    <p class="pa-address">{{ natural_monument.address }}</p>
+                    <p class="pa-date">Establecido el {{ natural_monument.established_date }}</p>
+                </div>
+            </a>
+        {% endfor %}
+
+        
+    </div>
+</div>
+
+
+
+
+
+{% endblock content %}

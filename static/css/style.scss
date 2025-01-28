@@ -1,0 +1,65 @@
+@forward 'neoparques/header';
+@forward 'neoparques/home';
+@use 'neoparques/variables' as v;
+
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat/Montserrat-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+p,h1,h2,h3,h4 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: v.$black;
+}
+
+#id_footer {
+    text-align: center;
+    background-color: v.$black;
+    color: v.$white;
+    font-size: 0.8125rem;
+    padding: 1rem;
+    font-weight: 600
+}

@@ -1,0 +1,75 @@
+@use 'variables' as v;
+
+
+#id_list {
+    max-width: v.$md;
+    margin: auto;
+    padding: 2rem;
+
+    h2 {
+        font-size: 1.25rem;
+        margin: 3rem 0 2rem 0;
+        border-bottom: 2px solid rgba(v.$black, $alpha: 0.5);
+        padding-bottom: 0.5rem;
+        
+    }
+
+    .protected-area {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        border-radius: 4px;
+        overflow: hidden;
+        border: 1px solid rgba(v.$black, $alpha: 0.1);
+        box-shadow: 0 4px 4px rgba(v.$black, $alpha: 0.2);
+        margin-bottom: 1rem;
+        transition: all 0.1s;
+
+        .pa-image{
+            display: flex;
+        }
+        
+        .pa-content {
+            padding: 1rem;
+            font-size: 0.75rem;
+
+            display: flex;
+            flex-direction: column;
+
+            .pa-name {
+                margin-bottom: 0.5rem;
+                font-size: 1rem;
+                font-weight: 700;
+            }
+            .pa-description {
+                display: -webkit-box;
+                -webkit-line-clamp: 10;
+                line-clamp: 10;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                font-weight: 500 !important;
+                flex: 1;
+                font-size: 0.8125rem;
+                img {
+                    display: none;
+                }
+                strong {
+                    font-weight: 500;
+                }
+            }
+            .pa-address {
+                font-weight: 700;
+                margin-bottom: 0.25rem;
+            }
+            .pa-date {
+                font-weight: 700;
+                color: rgba(v.$black, $alpha: 0.5);
+            }
+            
+        }
+        &:hover {
+            border: 1px solid rgba(v.$black, $alpha: 0.2);
+
+        }
+    }
+
+}

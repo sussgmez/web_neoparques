@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <title>Neoparques | {% block title %}{% endblock title %} </title>
+</head>
+<body>
+    <header id="id_header">
+        <div id="id_neoparques_logo">
+            <img src="{% static 'images/logo.png' %}" alt="Neoparques">
+        </div>
+        <nav id="id_navbar">
+            <a href="" class="nav-link {% if request.path == '/' %}selected{% endif %} ">Inicio</a>
+            <a href="" class="nav-link">Sobre nosotros</a>
+        </nav>
+    </header>
+    
+    {% block content %}
+    {% endblock content %}
+
+    <footer id="id_footer">
+        <p>Neoparques</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+#id_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 0 4px #000;
+  position: relative;
+  z-index: 100;
+  background-color: #FFFFFF;
+}
+#id_header #id_neoparques_logo {
+  width: 10rem;
+}
+#id_header #id_navbar {
+  display: flex;
+  gap: 0.75rem;
+}
+#id_header #id_navbar .nav-link {
+  padding: 0.25rem 1rem;
+  border-bottom: 2px solid #000;
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: all 0.1s;
+}
+#id_header #id_navbar .nav-link:hover {
+  color: #3C5E1B;
+  border-bottom: 2px solid #3C5E1B;
+}
+#id_header .selected {
+  color: #3C5E1B !important;
+  border-bottom: 2px solid #3C5E1B !important;
+}
+
+#id_list {
+  max-width: 960px;
+  margin: auto;
+  padding: 2rem;
+}
+#id_list h2 {
+  font-size: 1.25rem;
+  margin: 3rem 0 2rem 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  padding-bottom: 0.5rem;
+}
+#id_list .protected-area {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+  transition: all 0.1s;
+}
+#id_list .protected-area .pa-image {
+  display: flex;
+}
+#id_list .protected-area .pa-content {
+  padding: 1rem;
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+}
+#id_list .protected-area .pa-content .pa-name {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+#id_list .protected-area .pa-content .pa-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  line-clamp: 10;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-weight: 500 !important;
+  flex: 1;
+  font-size: 0.8125rem;
+}
+#id_list .protected-area .pa-content .pa-description img {
+  display: none;
+}
+#id_list .protected-area .pa-content .pa-description strong {
+  font-weight: 500;
+}
+#id_list .protected-area .pa-content .pa-address {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+#id_list .protected-area .pa-content .pa-date {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+}
+#id_list .protected-area:hover {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat/Montserrat-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+p, h1, h2, h3, h4 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+#id_footer {
+  text-align: center;
+  background-color: #000;
+  color: #FFFFFF;
+  font-size: 0.8125rem;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=style.css.map */
