@@ -1,5 +1,6 @@
 @forward 'neoparques/header';
-@forward 'neoparques/home';
+@forward 'neoparques/home_page';
+@forward 'neoparques/detail_page';
 @use 'neoparques/variables' as v;
 
 
@@ -46,13 +47,19 @@ img {
     object-fit: cover;
 }
 
-p,h1,h2,h3,h4 {
+p,h1,h2,h3,h4,h5,h6 {
     margin: 0;
 }
 
 a {
     text-decoration: none;
     color: v.$black;
+}
+
+.main-image {
+    img {
+        height: 40vw;
+    }
 }
 
 #id_footer {

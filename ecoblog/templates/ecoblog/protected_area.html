@@ -1,0 +1,53 @@
+{% extends "core/base.html" %}
+
+{% load static %}
+
+{% block title %}Inicio{% endblock title %}
+
+{% block content %}
+
+<div class="detail-page">
+    <div class="main-image">
+        <img src="{{ object.image.url }}" alt="">
+    </div>
+
+    <div id="id_detail">
+            
+        <h2>{{ object.name }}</h2>
+
+        <h6>{{ object.address }} - {{ object.established_date }}</h6>
+
+        <div class="section">
+            {{ object.description|safe }}
+        </div>
+
+        <h3>Flora</h3>
+
+        <div class="section">
+            {{ object.flora|safe }}
+        </div>
+
+        {% if object.fauna %}
+        
+            <h3>Fauna</h3>
+
+            <div class="section">
+                {{ object.fauna|safe }}
+            </div>
+
+        {% endif %}
+
+        {% if object.activities %}
+        
+            <h3>Actividades</h3>
+
+            <div class="section">
+                {{ object.activities|safe }}
+            </div>
+
+        {% endif %}
+
+    </div>
+</div>
+
+{% endblock content %}

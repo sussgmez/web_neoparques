@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, DetailView
 from .models import ProtectedArea
 
 
@@ -14,3 +14,8 @@ class HomeView(TemplateView):
         return context
     
 
+class ProtectedAreaDetailView(DetailView):
+    model = ProtectedArea
+    template_name = "ecoblog/protected_area.html"
+
+    
