@@ -108,11 +108,18 @@
 }
 #id_detail h6 {
   color: rgba(0, 0, 0, 0.75);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 #id_detail .section {
   font-size: 0.875rem;
-  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#id_detail .section p {
+  margin-bottom: 1rem;
+}
+#id_detail .section p:has(img) {
+  display: inline-block;
 }
 
 @font-face {
@@ -153,6 +160,7 @@
 img {
   width: 100%;
   object-fit: cover;
+  height: auto;
 }
 
 p, h1, h2, h3, h4, h5, h6 {

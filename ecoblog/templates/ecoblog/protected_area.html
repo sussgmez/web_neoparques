@@ -21,11 +21,15 @@
             {{ object.description|safe }}
         </div>
 
-        <h3>Flora</h3>
+        {% if object.flora %}
+        
+            <h3>Flora</h3>
 
-        <div class="section">
-            {{ object.flora|safe }}
-        </div>
+            <div class="section">
+                {{ object.flora|safe }}
+            </div>
+
+        {% endif %}
 
         {% if object.fauna %}
         

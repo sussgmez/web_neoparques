@@ -12,7 +12,7 @@
     <div id="id_list">
         <h2>PARQUES NACIONALES</h2>
         {% for national_park in national_parks %}
-            <a class="protected-area" href="">
+            <a class="protected-area" href="{% url "protected-area" national_park.pk %}">
                 <div class="pa-image">
                     <img src="{{ national_park.image.url }}" alt="">
                 </div>
@@ -31,7 +31,7 @@
         <h2>MONUMENTOS NATURALES</h2>
 
         {% for natural_monument in natural_monuments %}
-            <a class="protected-area" href="">
+            <a class="protected-area" href="{% url "protected-area" natural_monument.pk %}">
                 <div class="pa-image">
                     <img src="{{ natural_monument.image.url }}" alt="">
                 </div>

@@ -12,11 +12,11 @@
 </head>
 <body>
     <header id="id_header">
-        <div id="id_neoparques_logo">
+        <a id="id_neoparques_logo" href="{% url "home" %}">
             <img src="{% static 'images/logo.png' %}" alt="Neoparques">
-        </div>
+        </a>
         <nav id="id_navbar">
-            <a href="" class="nav-link {% if request.path == '/' %}selected{% endif %} ">Inicio</a>
+            <a class="nav-link {% if request.path == '/' %}selected{% endif %}"  href="{% url "home" %}">Inicio</a>
             <a href="" class="nav-link">Sobre nosotros</a>
         </nav>
     </header>

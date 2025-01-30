@@ -17,12 +17,21 @@
 
     h6 {
         color: rgba(v.$black, $alpha: 0.75);
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
 
     .section {
         font-size: 0.875rem;
-        margin-bottom: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        p {
+            margin-bottom: 1rem;
+        }
+
+        p:has(img) {
+            display: inline-block;
+        }
+
     }
 
 }
