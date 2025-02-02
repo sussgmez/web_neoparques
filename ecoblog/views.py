@@ -18,4 +18,5 @@ class ProtectedAreaDetailView(DetailView):
     model = ProtectedArea
     template_name = "ecoblog/protected_area.html"
 
-    
+class AboutUsView(TemplateView):
+    template_name = "ecoblog/about_us.html"

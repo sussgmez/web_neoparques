@@ -12,7 +12,8 @@
     }
 
     h3 {
-        margin-bottom: 1rem;
+        margin: 2.5rem 0 1.25rem 0;
+        font-weight: 700;
     }
 
     h6 {
@@ -22,16 +23,17 @@
 
     .section {
         font-size: 0.875rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         p {
             margin-bottom: 1rem;
         }
-
-        p:has(img) {
-            display: inline-block;
+        img {
+            margin-bottom: 0.5rem;
         }
-
+        li {
+            margin-bottom: 0.5rem;
+        }
+        ul {
+            padding-left: 1rem;
+        }
     }
-
 }

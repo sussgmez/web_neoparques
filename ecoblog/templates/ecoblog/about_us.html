@@ -1,0 +1,27 @@
+
+{% extends "core/base.html" %}
+
+{% load static %}
+
+{% block title %}Inicio{% endblock title %}
+
+{% block content %}
+<div class="about-us-page">
+    <div class="main-image">
+        <img src="{% static 'images/about_us.png' %}" alt="">
+    </div>
+    <div id="id_about_us">
+        <h1>¿Quiénes somos?</h1>
+        <p>Somos una ventana a la extraordinaria diversidad natural de la isla de margarita. Nuestra pasión es conectar a las personas con la belleza y la importancia de nuestros parques nacionales y monumentos naturales. A través de esta plataforma, te invitamos a explorar los rincones más asombrosos de la isla, desde la maravillosa Laguna de La Restinga hasta las exuberantes vistas desde el mirador de Copey</p>
+        <p>Nuestro objetivo es fomentar el aprecio por nuestro patrimonio natural y promover la conservación de estos ecosistemas únicos. Queremos inspirarte a visitar estos lugares, aprender sobre su flora y fauna, y convertirte en un defensor de la naturaleza.</p>
+        <p>Encontrarás información detallada sobre cada parque y monumento, incluyendo fotografías, actividades a realizarse, que puedes encontrar y mucho más. Además, te mantendremos informado sobre las últimas noticias y eventos relacionados con la conservación de nuestros espacios naturales.</p>
+        <p>Únete a nosotros en esta aventura y descubre la magia de las áreas conservadas de Margarita.</p>
+        <h1>Misión y visión</h1>
+        <h2>Misión</h2>
+        <p>Promover la conservación y el disfrute responsable de los parques nacionales y monumentos naturales de Nueva Esparta, fomentando el turismo sostenible y educando a la comunidad sobre la importancia de preservar nuestro patrimonio natural.</p>
+        <h2>Visión</h2>
+        <p>Ser la plataforma de referencia para todos aquellos que deseen conocer, apreciar y proteger los espacios naturales de Nueva Esparta, convirtiéndonos en un agente de cambio hacia un turismo más consciente y respetuoso con el medio ambiente.</p>
+    </div>
+</div>
+
+{% endblock content %}

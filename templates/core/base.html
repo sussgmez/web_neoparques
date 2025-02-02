@@ -17,7 +17,7 @@
         </a>
         <nav id="id_navbar">
             <a class="nav-link {% if request.path == '/' %}selected{% endif %}"  href="{% url "home" %}">Inicio</a>
-            <a href="" class="nav-link">Sobre nosotros</a>
+            <a class="nav-link {% if request.path == '/about_us/' %}selected{% endif %}"  href="{% url "about-us" %}">Sobre nosotros</a>
         </nav>
     </header>
     
